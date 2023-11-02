@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unidade de Saude Familiar - Aquilino Ribeiro">
+    <meta name="keywords" content="USF">
+    <title>O Que Fazemos</title>
+    <link rel="stylesheet" href="usf_css1.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Unidade de Saúde Familiar</h1>
+        <h1>Aquilino Ribeiro</h1>
+    </header> 
+    
+    <nav id="nav">
+        <ul>
+            <li><a href="Unidade_da_Saude_Familiar.html">Início</a></li>
+            <li><a href="quem _somos.html">Quem Somos</a></li>
+            <li class="ativo"><a href="o_que_fazemos.html">O que Fazemos</a></li>
+            <li><a href="indicadores.html">Indicadores</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li class="login"><a class="login" href="login.html">Login</a>
+                <ul class="dropdown">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <br/>
+    <main id="o_que_fazemos">
+        <h2>O que Fazemos</h2>
+        <div id="acao">
+            <h3>Ações de Sensibilização</h3>
+            <br/>
+            <div class="acao">
+                <p>A USF Aquilino Ribeiro (Moimenta da Beira), no âmbito da temática “Drogas e Álcool”, realizou ontem uma ação destinada aos alunos do Secundário, do Agrupamento de Escolas de Moimenta da Beira, em parceria, com o Gabinete de Ação Social da Câmara Municipal de Moimenta da Beira, com a Comissão de Proteção de Crianças e Jovens em Risco e com o Serviço de Psicologia e Orientação do Agrupamento.
+                Esta ação foi realizada nas novas instalações do quartel da GNR de Moimenta da Beira, o que permitiu aos alunos uma visita guiada ao quartel e depois na sala de instrução, assistirem a uma palestra sobre a temática “Drogas e Álcool” por parte do Núcleo da Escola Segura.</p>
+                <img src="imagens/drogas.jpg">
+            </div>
+        </div>
+        <br/>
+        <hr>
+        <br/>
+        <div class="column">
+            <h3>Áreas e Sub-Áreas da USF</h3>
+            <div class="row">
+                 <img class="imgx" src="imagens/img1.png"> 
+                 <img class="imgx" src="imagens/img2.png"> 
+                 <img class="imgx" src="imagens/img3.png"> 
+                 <img class="imgx" src="imagens/img4.png">
+            </div>
+            <div class="row"> 
+                 <img class="imgx" src="imagens/img5.png"> 
+                 <img class="imgx" src="imagens/img6.png"> 
+                 <img class="img7"  src="imagens/img7.png"> 
+            </div>
+        </div>
+        <br/>
+        <form>
+            <fieldset>
+                <label>Primeiro Nome:</label>
+                <input type="text" required placeholder="Primeiro Nome" maxlength="20" name="primeiro">
+                <label>Último nome:</label>
+                <input type="text" required placeholder="Último Nome" name="ultimo">
+                <label>Sexo:</label>
+                    <select name="sexo">
+                        <option value="f">Feminino</option>
+                        <option value="m">Masculino</option>
+                    </select>
+                <label>Cartão de Cidadão:</label>
+                <input type="text" required placeholder="Cartão de Identificação" name="ci">
+                <p>Idade: <input type="number" required min="0" max="150" name="idade"></p>
+                <label>Email:</label>
+                <input type="email" name="eml" required placeholder="Email" name="email">
+                <hr>
+                <label>Escolha o Médico:</label>
+                    <select name="s2">
+                        <option value="medica1">Maria Dalila Fernandes Mendes Garcia Lima</option>
+                        <option value="medica2">Francisca Sousa Santos</option>
+                        <option value="medica3">Martim Silva Loureiro</option>
+                        <option value="medica4">Salvador Gonçalves Fonseca</option>
+                    </select>
+                <hr>
+                <label>Comentário:</label>
+                <textarea rows="5" cols="40" maxlength="1000" placeholder="Comentário..." name="comentario"></textarea>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+    </main>
+    <br/>
+    <footer>
+        <ul>
+            <li><a href="linhas.html">Linhas de Apoio</a></li>
+            <li><a href="links.html">Links Úteis</a></li>
+            <li><a href="saude.html">Outras Unidades de Saúde</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" src="javascript/sticky.js"></script>
+</body>
+</html>

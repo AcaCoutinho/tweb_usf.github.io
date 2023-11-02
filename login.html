@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unidade de Saude Familiar - Aquilino Ribeiro">
+    <meta name="keywords" content="USF">
+    <title>Unidade de Saude Familiar</title>
+    <link rel="stylesheet" href="usf_css1.css">
+    <script type="text/javascript" src="javascript/login.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Unidade de Saúde Familiar</h1>
+        <h1>Aquilino Ribeiro</h1>
+    </header> 
+    <nav id="nav">
+        <ul>
+            <li><a href="Unidade_da_Saude_Familiar.html">Início</a></li>
+            <li><a href="quem _somos.html">Quem Somos</a></li>
+            <li><a href="o_que_fazemos.html">O que Fazemos</a></li>
+            <li><a href="indicadores.html">Indicadores</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li class="login"><a class="login" href="login.html">Login</a>
+                <ul class="dropdown">
+                    <li class="ativo"><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <br/>
+    <main id="login">
+            <form>
+                <div id="login">
+                    <h2>Login</h2>
+                    <hr>
+                    <label>Nome de Usuário:</label>
+                    <input type="text" id="uname" placeholder="Nome de Usuario" name="uname" autocomplete="off" required></p>
+                    <label>Palavra-Passe:</label>
+                    <input type="password" id="psw" placeholder="Palavra-Passe" name="psw" autocomplete="off" required>
+                    <p>Lembrar-se de mim <input type="checkbox" name="remember"></p>
+                    <button class="login" name="botao" value="Login" onclick="login()">Login</button>
+                </div>
+            </form>
+    </main>
+    <br/>
+    <footer>
+        <ul>
+            <li><a href="linhas.html">Linhas de Apoio</a></li>
+            <li><a href="links.html">Links Úteis</a></li>
+            <li><a href="saude.html">Outras Unidades de Saúde</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

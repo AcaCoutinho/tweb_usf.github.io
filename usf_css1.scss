@@ -1,0 +1,938 @@
+$primaria: #009688;
+$header-color:#B3E5FC;
+$hover:lighten($primaria,3%);
+$random:lighten($primaria,5%);
+
+body{
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0;
+    font-size: 18px;
+}
+header{
+    margin: 0;
+    color: white;
+    background-color: $hover;
+    padding: 10px 16px;
+    text-align: center;
+}
+nav{
+    z-index: 1;
+    ul{
+        background-color: $primaria;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        li{
+            color: white;
+            background-color: $primaria;
+            display: block;
+            float: left;
+            padding: 10px;
+            a{
+                text-decoration: $primaria;
+                color: white;
+            }
+            ul{
+                background-color: $primaria;
+                visibility: hidden;
+                opacity: 0;
+                min-width: 5rem;
+                position: absolute;
+                margin-top: 10px;
+                right: 0;
+                display: none;
+                li{
+                    clear: both;
+                    width: 100%;
+                }
+            }
+            ul.ad{
+                background-color: $primaria;
+                visibility: hidden;
+                opacity: 0;
+                min-width: 5rem;
+                position: relative;
+                margin: 10px 400px 0 0;
+                display: none;
+                li{
+                    width: 100%;
+                    clear: both;
+                }
+            }
+        }
+        li.login{
+            float: right;
+        }
+        li:hover, li:focus-within{
+            background-color: $hover;
+            cursor: pointer;
+        }
+        li:hover a, li:focus-within a{
+            outline: none;
+        }
+        li:hover > ul, li:focus-within > ul, li ul:hover, li ul:focus{
+            visibility: visible;
+            opacity: 1;
+            display: block;
+        }
+        li.ativo{
+            background-color:$hover;
+        }
+    }
+}
+#nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+footer{
+    ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: $primaria;
+        bottom: 0;
+        li{
+            a{
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                text-decoration: none;
+                float: left;
+                width: 23%;
+            }
+            a:hover{
+                background-color: $hover;
+                color: white;
+            }
+            a.activo{
+                background-color: $hover;
+                color: white;
+            }
+        }
+    }
+}
+#inicial{
+    #polaroid{
+        width: 70%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 $primaria;
+        margin: 40px auto auto auto;  
+        display: block;
+        img{
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+            display: block;
+            padding-top: 45px;
+        }
+        .content{
+            text-align: center;
+            padding: 10px 20px;
+            color: $primaria;
+            font-size: 20px;
+        }
+    }
+    #conteudo{
+        margin: 0px 10px;
+        padding: 10px 30px;
+        h2.titulo{
+            text-align: center;
+            color: $primaria;
+            margin: 50px 0;     
+        }
+        p{
+            line-height: 1.5;
+        }
+    }
+}
+#quem_somos{
+    margin: 0px 10px;
+    h2{
+        text-align: center;
+        color: $primaria;
+    }
+    h2.bloco2{
+        text-align: center;
+        color: $primaria;
+        font-size: 20px;
+    }
+    #bloco1{
+        h3{
+            color: $primaria
+        }
+        h3:not(.nao){
+            text-align: center;
+        }
+        p{
+            line-height: 1.5;
+        }
+    }
+    form{
+        fieldset{
+            border: 3px solid $primaria;
+            padding-top: 20px;
+            hr{
+                border: 1px solid $primaria;
+                margin-bottom: 25px;
+                background-color: $primaria;
+            }
+            select{
+                border: none;
+                font-size: medium;
+                background-color: #f1f1f1;
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                option{
+                    border: none;
+                }
+            }
+            input[type=text]{
+                width: 98%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background-color: #f1f1f1;
+            }
+            input[type=text]:focus{
+                outline: none;
+                background-color: #ddd;
+            }
+            textarea{
+                width: 98%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background-color: #f1f1f1;
+            }
+            textarea:focus{
+                background-color: #ddd;
+                outline: none;
+            }
+            input[type=submit]{
+                background-color: $primaria;
+                width: 100%;
+                border: none;
+                color: white;
+                padding: 15px 10px;
+                text-decoration: none;
+                cursor: pointer;
+                opacity: 0.9;
+                font-size: large;
+            }
+            input[type=submit]:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+.bloco2{
+    h2{
+        text-align: center;
+        color: $primaria;
+    }
+    #bloco2{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: $random;
+        padding: 0px 10px;
+        #morada, #horario, #telefone{
+            font-size: 14px;
+            color: white;
+            text-align: center;
+        }
+    }
+}
+#o_que_fazemos{
+    margin: 0px 10px;
+    h2{
+        color: $primaria;
+        text-align: center;
+    }
+    hr{
+        border: 1px solid $primaria;
+        margin-bottom: 25px;
+        background-color: $primaria; 
+    }
+    #acao{ 
+        margin: 20px 20px 0 20px;
+        padding: 20px 20px 0 20px;
+        h3{
+            color: $primaria;
+            text-align: center;
+        }
+        .acao{
+            display: grid;
+            grid-template-columns: auto auto;
+            img{
+                margin: 40px;
+            }
+            p{
+                line-height: 1.5;
+                margin-top: 40px;
+            }
+        }
+    }
+    img.imgx{
+        height: 300px;
+        width: 350px;
+        margin: 10px;
+    }
+    img.img7{
+        height: 300px;
+        width: 700px;
+    }
+    .column{
+        h3{
+            text-align: center;
+            color: $primaria;
+            margin-bottom: 40px;
+        }
+        div{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+    }
+    .row{
+        div{
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        img{
+            div{
+                margin-top: 8px;
+                width: 100%;
+            }
+        }
+    }
+    form{
+        fieldset{
+            border: 3px solid $primaria;
+            padding-top: 20px;
+            hr{
+                border: 1px solid $primaria;
+                margin-bottom: 25px;
+                background-color: $primaria;
+            }
+            select{
+                text-align: center;
+                padding: 8px 10px;
+                border: 1px solid;
+                border-radius: 4px;
+                background-color: white;
+            }
+            input[type=text], input[type=password], input[type=email]{
+                width: 98%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background-color: #f1f1f1;
+            }
+            input[type=text]:focus, input[type=password]:focus, input[type=email]:focus{
+                background-color: #ddd;
+                outline: none;
+            }
+            textarea{
+                width: 98%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background-color: #f1f1f1;
+            }
+            textarea:focus{
+                background-color: #ddd;
+                outline: none;
+            }
+            input[type=submit]{
+                background-color: $primaria;
+                width: 100%;
+                border: none;
+                color: white;
+                padding: 15px 10px;
+                text-decoration: none;
+                cursor: pointer;
+                opacity: 0.9;
+                font-size: large;
+            }
+            input[type=submit]:hover{
+                opacity: 1;
+            }
+            select{
+                border: none;
+                font-size: medium;
+                background-color: #f1f1f1;
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                option{
+                    border: none;
+                }
+            }
+            input[type=number]{
+                border: none;
+                background-color: #f1f1f1;
+                height: 20px;
+            }
+            input[type=number]:focus{
+                outline: none;
+                background-color: #ddd;
+            }
+        }
+    }
+}
+#indicadores_{
+    margin: 0px 10px;
+    #indicadores{
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        #indicador{
+            z-index: 0;
+            padding: 20px;
+            width: 70%;
+            h2{
+                text-align: center;
+                font-size: 20px;
+                color: $primaria;
+            }
+        }
+    }
+}
+#recursos{
+    margin: 0px 10px;
+    .lar, .educacao{
+        overflow: hidden;
+    }
+    .lar{
+        ul{
+            li{
+                list-style-type: disc;
+                padding: 5px;
+            }
+        }
+    }
+    .educacao{
+        ul{
+            li{
+                list-style-type: disc;
+                padding: 5px;
+            }
+        }
+        div{
+            margin-top: 60px;
+        }
+    }
+    img{
+        float: right;
+        width: 400px;
+        height: 300px;
+        margin-top: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+
+    h2{
+        color: $primaria;
+        text-align: center;
+    }
+    hr{
+        border: 1.5px solid $primaria;
+        margin-bottom: 25px;
+        background-color: $primaria;
+    }
+    p{
+        line-height: 1.5;
+    }
+}
+#login{
+    margin: 0px 10px;
+    form{
+        #login{
+            padding: 16px;
+            background-color: white;
+            h2{
+                text-align: center;
+                color: $primaria;
+                font-size: 25px;
+            }
+            label, p, button{
+                font-size: larger;
+            }
+            hr{
+                border: 1px solid $primaria;
+                margin-bottom: 25px;
+                background-color: $primaria;
+            }
+            input[type=text], input[type=password]{
+                width: 98%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background-color: #f1f1f1;
+            }
+            input[type=text]:focus, input[type=password]:focus{
+                background-color: #ddd;
+                outline: none;
+            }
+            .login{
+                background-color: $primaria;
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+            .login:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+#registro{
+    margin: 0px 10px;
+    form{
+        .register{
+            padding: 16px;
+            background-color: white;
+            label, p, button{
+                font-size: larger;
+            }
+            input[type=text], input[type=password]{
+                width: 98%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                display: inline-block;
+                border: none;
+                background-color: #f1f1f1;
+            }
+            input[type=text]:focus, input[type=password]:focus{
+                background-color: #ddd;
+                outline: none;
+            }
+            hr{
+                border: 1px solid $primaria;
+                margin-bottom: 25px;
+                background-color: $primaria;
+            }
+            .btn{
+                background-color: $primaria;
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                opacity: 0.9;
+            }
+            .btn:hover{
+                opacity: 1;
+            }
+        }
+        .login{
+            a{
+                text-decoration: none;
+                color: $primaria;
+            }
+            p, a{
+                font-size: large;
+            }
+        }
+    }
+}
+#acesso{
+    div{
+        h2{
+            color: $primaria;
+            text-align: center;
+        }
+        #botao{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+                display: block;
+                background-color: $primaria;
+                color: white;
+                padding: 16px 20px;
+                margin: 8px 0;
+                border: none;
+                cursor: pointer;
+                opacity: 0.9;
+                text-align: center;
+                a{
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    background-color: $primaria;
+                    color: white;
+                }
+            }
+            button:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+#linhas{
+    margin: 0px 10px;
+    h2{
+        color: $primaria;
+        text-align: center;
+    }
+    hr{
+        border: 1px solid $primaria;
+        background-color: $primaria;
+    }
+    div{
+        p{
+            padding-left: 30px;
+        }
+        span{
+            float: right;
+            padding-right: 80px;
+        }
+    }
+}
+#links{
+    margin: 0px 10px;
+    h2{
+        color: $primaria;
+        text-align: center;
+    }
+    hr{
+        border: 1px solid $primaria;
+        background-color: $primaria;
+    }
+    div{
+        p{
+            padding-left: 30px;
+        }
+        a{
+            float: right;
+            padding-right: 60px;
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: $primaria;
+        }
+    }
+}
+#saude{
+    margin: 0px 10px;
+    hr{
+        border: 1px solid $primaria;
+        background-color: $primaria;
+    }
+    h2{
+        text-align: center;
+        color: $primaria;
+    }
+    h3{
+        text-align: center;
+        color: $primaria;
+    }
+    #clinicas{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 10px;
+        #clinica1, #clinica2{
+            padding: 0 200px;
+            h4{
+                text-align: center;
+                color: $primaria;
+            }
+            p{
+                text-align: center;
+            }
+            div#iframe{
+                height: auto;
+                padding: auto;
+                margin: auto;
+                iframe{
+                    height:100%;
+                }
+            }
+        }
+    }
+    #farmacias{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 10px;
+        #farmacia1, #farmacia2{
+            padding: 0 200px;
+            h4{
+                text-align: center;
+                color: $primaria;
+            }
+            p{
+                text-align: center;
+            }
+            div#iframe{
+                height: auto;
+                padding: auto;
+                margin: auto;
+                iframe{
+                    height:100%;
+                }
+            }
+        }
+    }
+}
+#perguntas_frequentes{
+    margin: 0;
+    h2{
+        color: $primaria;
+        text-align: center;
+    }
+    .accordion{
+        background-color: $random;
+        color: white;
+        cursor: pointer;
+        padding: 20px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 18px;
+        margin: 0;
+    }
+    .active, .accordion:hover {
+        background-color: $hover; 
+    }
+    .panel{
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+        p{
+            line-height: 1.5;
+        }   
+        ul{
+            li{
+                list-style-type: disc;
+                padding: 5px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    nav{
+        ul{
+            background-color: $primaria;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            li{
+                color: white;
+                background-color: $primaria;
+                display: block;
+                width: 100%;
+                padding: 10px;
+                text-align: center;
+                a{
+                    text-decoration: $primaria;
+                    color: white;
+                    width: 100%;
+                }
+                ul{
+                    background-color: $primaria;
+                    visibility: hidden;
+                    opacity: 0;
+                    margin-top: 10px;
+                    right: 0;
+                    display: none;
+                    width: 100%;
+                    li{
+                        clear: both;
+                        width: 100%;
+                    }
+                }
+            }
+            li.login{
+                width: 100%;
+                float: left;
+            }
+        }
+    }
+    #nav.sticky{
+        position: relative;
+    }
+    #o_que_fazemos{
+        #acao{
+            .acao{
+                display: grid;
+                grid-template-columns: auto;
+                img{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        div.column{
+            .row{
+                .imgx{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                    height: auto;
+                }
+                .img7{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    #recursos{
+        .lar, .educacao{   
+            display: grid;
+            grid-template-columns: auto;
+            img{
+                max-width: 100%;
+                height: auto;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px){
+    footer{
+        ul{
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+            li{
+                a{
+                 width: 100%;
+                }
+            }
+        }
+    }
+    #quem_somos{
+        form{
+            fieldset{
+                input[type=text]{
+                    width: 95%;
+                }
+                textarea{
+                    width: 95%;
+                }
+            }   
+        }
+    }
+    #o_que_fazemos{
+        form{
+            fieldset{
+                input[type=text],input[type=password], input[type=email]{
+                    width: 95%;
+                }
+                textarea{
+                    width: 95%;
+                }   
+            }
+        }
+    }
+    #indicadores_{
+        margin: 0px 10px;
+        #indicadores{
+            display: grid;
+            grid-template-columns:auto;
+            padding: 10px;
+            margin:auto auto auto auto;
+            #indicador{
+                margin: auto;
+                padding: auto;
+                text-align: center;
+                #indicador_1, #indicador_2, #indicador_3, #indicador_4, #indicador_5, #indicador_6{
+                    margin: auto;
+                    padding: auto;
+                }
+            }
+        }
+    }
+    #recursos{
+        margin: 0px 10px;
+        .clearfix{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+    #linhas{
+        margin: 0px 10px;
+        div{
+            display: grid;
+            grid-template-columns: auto;
+            p{
+                padding-left: 30px;
+            }
+            span{
+                float: right;
+                padding-right: 80px;
+            }
+        }
+    }
+    #saude{
+        margin: 0px 10px;
+        #clinicas{
+            display: grid;
+            grid-template-columns: auto;
+            margin: 10px;
+            #clinica1, #clinica2{
+                padding: 0 40px;
+                h4{
+                    text-align: center;
+                    color: $primaria;
+                }
+                p{
+                    text-align: center;
+                }
+                iframe{
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        #farmacias{
+            display: grid;
+            grid-template-columns:auto;
+            margin: 10px;
+            #farmacia1, #farmacia2{
+                padding: 0 40px;
+                h4{
+                    text-align: center;
+                    color: $primaria;
+                }
+                p{
+                    text-align: center;
+                }
+                iframe{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}    

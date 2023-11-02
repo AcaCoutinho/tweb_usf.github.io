@@ -1,0 +1,1043 @@
+body {
+  font-family: sans-serif;
+  background-color: white;
+  margin: 0;
+  font-size: 18px;
+}
+
+header {
+  margin: 0;
+  color: white;
+  background-color: #00a596;
+  padding: 10px 16px;
+  text-align: center;
+}
+
+nav {
+  z-index: 1;
+}
+
+nav ul {
+  background-color: #009688;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  color: white;
+  background-color: #009688;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+
+nav ul li a {
+  -webkit-text-decoration: #009688;
+          text-decoration: #009688;
+  color: white;
+}
+
+nav ul li ul {
+  background-color: #009688;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  margin-top: 10px;
+  right: 0;
+  display: none;
+}
+
+nav ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+nav ul li ul.ad {
+  background-color: #009688;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: relative;
+  margin: 10px 400px 0 0;
+  display: none;
+}
+
+nav ul li ul.ad li {
+  width: 100%;
+  clear: both;
+}
+
+nav ul li.login {
+  float: right;
+}
+
+nav ul li:hover, nav ul li:focus-within {
+  background-color: #00a596;
+  cursor: pointer;
+}
+
+nav ul li:hover a, nav ul li:focus-within a {
+  outline: none;
+}
+
+nav ul li:hover > ul, nav ul li:focus-within > ul, nav ul li ul:hover, nav ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li.ativo {
+  background-color: #00a596;
+}
+
+#nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #009688;
+  bottom: 0;
+}
+
+footer ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  float: left;
+  width: 23%;
+}
+
+footer ul li a:hover {
+  background-color: #00a596;
+  color: white;
+}
+
+footer ul li a.activo {
+  background-color: #00a596;
+  color: white;
+}
+
+#inicial #polaroid {
+  width: 70%;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 8px 0 #009688;
+          box-shadow: 0 4px 8px 0 #009688;
+  margin: 40px auto auto auto;
+  display: block;
+}
+
+#inicial #polaroid img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  display: block;
+  padding-top: 45px;
+}
+
+#inicial #polaroid .content {
+  text-align: center;
+  padding: 10px 20px;
+  color: #009688;
+  font-size: 20px;
+}
+
+#inicial #conteudo {
+  margin: 0px 10px;
+  padding: 10px 30px;
+}
+
+#inicial #conteudo h2.titulo {
+  text-align: center;
+  color: #009688;
+  margin: 50px 0;
+}
+
+#inicial #conteudo p {
+  line-height: 1.5;
+}
+
+#quem_somos {
+  margin: 0px 10px;
+}
+
+#quem_somos h2 {
+  text-align: center;
+  color: #009688;
+}
+
+#quem_somos h2.bloco2 {
+  text-align: center;
+  color: #009688;
+  font-size: 20px;
+}
+
+#quem_somos #bloco1 h3 {
+  color: #009688;
+}
+
+#quem_somos #bloco1 h3:not(.nao) {
+  text-align: center;
+}
+
+#quem_somos #bloco1 p {
+  line-height: 1.5;
+}
+
+#quem_somos form fieldset {
+  border: 3px solid #009688;
+  padding-top: 20px;
+}
+
+#quem_somos form fieldset hr {
+  border: 1px solid #009688;
+  margin-bottom: 25px;
+  background-color: #009688;
+}
+
+#quem_somos form fieldset select {
+  border: none;
+  font-size: medium;
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+}
+
+#quem_somos form fieldset select option {
+  border: none;
+}
+
+#quem_somos form fieldset input[type=text] {
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+#quem_somos form fieldset input[type=text]:focus {
+  outline: none;
+  background-color: #ddd;
+}
+
+#quem_somos form fieldset textarea {
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+#quem_somos form fieldset textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#quem_somos form fieldset input[type=submit] {
+  background-color: #009688;
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: large;
+}
+
+#quem_somos form fieldset input[type=submit]:hover {
+  opacity: 1;
+}
+
+.bloco2 h2 {
+  text-align: center;
+  color: #009688;
+}
+
+.bloco2 #bloco2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  background-color: #00b09f;
+  padding: 0px 10px;
+}
+
+.bloco2 #bloco2 #morada, .bloco2 #bloco2 #horario, .bloco2 #bloco2 #telefone {
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
+#o_que_fazemos {
+  margin: 0px 10px;
+}
+
+#o_que_fazemos h2 {
+  color: #009688;
+  text-align: center;
+}
+
+#o_que_fazemos hr {
+  border: 1px solid #009688;
+  margin-bottom: 25px;
+  background-color: #009688;
+}
+
+#o_que_fazemos #acao {
+  margin: 20px 20px 0 20px;
+  padding: 20px 20px 0 20px;
+}
+
+#o_que_fazemos #acao h3 {
+  color: #009688;
+  text-align: center;
+}
+
+#o_que_fazemos #acao .acao {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+#o_que_fazemos #acao .acao img {
+  margin: 40px;
+}
+
+#o_que_fazemos #acao .acao p {
+  line-height: 1.5;
+  margin-top: 40px;
+}
+
+#o_que_fazemos img.imgx {
+  height: 300px;
+  width: 350px;
+  margin: 10px;
+}
+
+#o_que_fazemos img.img7 {
+  height: 300px;
+  width: 700px;
+}
+
+#o_que_fazemos .column h3 {
+  text-align: center;
+  color: #009688;
+  margin-bottom: 40px;
+}
+
+#o_que_fazemos .column div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+#o_que_fazemos .row div {
+  -webkit-box-flex: 25%;
+      -ms-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+#o_que_fazemos .row img div {
+  margin-top: 8px;
+  width: 100%;
+}
+
+#o_que_fazemos form fieldset {
+  border: 3px solid #009688;
+  padding-top: 20px;
+}
+
+#o_que_fazemos form fieldset hr {
+  border: 1px solid #009688;
+  margin-bottom: 25px;
+  background-color: #009688;
+}
+
+#o_que_fazemos form fieldset select {
+  text-align: center;
+  padding: 8px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+  background-color: white;
+}
+
+#o_que_fazemos form fieldset input[type=text], #o_que_fazemos form fieldset input[type=password], #o_que_fazemos form fieldset input[type=email] {
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+#o_que_fazemos form fieldset input[type=text]:focus, #o_que_fazemos form fieldset input[type=password]:focus, #o_que_fazemos form fieldset input[type=email]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#o_que_fazemos form fieldset textarea {
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+#o_que_fazemos form fieldset textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#o_que_fazemos form fieldset input[type=submit] {
+  background-color: #009688;
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 15px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: large;
+}
+
+#o_que_fazemos form fieldset input[type=submit]:hover {
+  opacity: 1;
+}
+
+#o_que_fazemos form fieldset select {
+  border: none;
+  font-size: medium;
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+}
+
+#o_que_fazemos form fieldset select option {
+  border: none;
+}
+
+#o_que_fazemos form fieldset input[type=number] {
+  border: none;
+  background-color: #f1f1f1;
+  height: 20px;
+}
+
+#o_que_fazemos form fieldset input[type=number]:focus {
+  outline: none;
+  background-color: #ddd;
+}
+
+#indicadores_ {
+  margin: 0px 10px;
+}
+
+#indicadores_ #indicadores {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+#indicadores_ #indicadores #indicador {
+  z-index: 0;
+  padding: 20px;
+  width: 70%;
+}
+
+#indicadores_ #indicadores #indicador h2 {
+  text-align: center;
+  font-size: 20px;
+  color: #009688;
+}
+
+#recursos {
+  margin: 0px 10px;
+}
+
+#recursos .lar, #recursos .educacao {
+  overflow: hidden;
+}
+
+#recursos .lar ul li {
+  list-style-type: disc;
+  padding: 5px;
+}
+
+#recursos .educacao ul li {
+  list-style-type: disc;
+  padding: 5px;
+}
+
+#recursos .educacao div {
+  margin-top: 60px;
+}
+
+#recursos img {
+  float: right;
+  width: 400px;
+  height: 300px;
+  margin-top: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
+}
+
+#recursos h2 {
+  color: #009688;
+  text-align: center;
+}
+
+#recursos hr {
+  border: 1.5px solid #009688;
+  margin-bottom: 25px;
+  background-color: #009688;
+}
+
+#recursos p {
+  line-height: 1.5;
+}
+
+#login {
+  margin: 0px 10px;
+}
+
+#login form #login {
+  padding: 16px;
+  background-color: white;
+}
+
+#login form #login h2 {
+  text-align: center;
+  color: #009688;
+  font-size: 25px;
+}
+
+#login form #login label, #login form #login p, #login form #login button {
+  font-size: larger;
+}
+
+#login form #login hr {
+  border: 1px solid #009688;
+  margin-bottom: 25px;
+  background-color: #009688;
+}
+
+#login form #login input[type=text], #login form #login input[type=password] {
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+#login form #login input[type=text]:focus, #login form #login input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#login form #login .login {
+  background-color: #009688;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#login form #login .login:hover {
+  opacity: 1;
+}
+
+#registro {
+  margin: 0px 10px;
+}
+
+#registro form .register {
+  padding: 16px;
+  background-color: white;
+}
+
+#registro form .register label, #registro form .register p, #registro form .register button {
+  font-size: larger;
+}
+
+#registro form .register input[type=text], #registro form .register input[type=password] {
+  width: 98%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background-color: #f1f1f1;
+}
+
+#registro form .register input[type=text]:focus, #registro form .register input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#registro form .register hr {
+  border: 1px solid #009688;
+  margin-bottom: 25px;
+  background-color: #009688;
+}
+
+#registro form .register .btn {
+  background-color: #009688;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#registro form .register .btn:hover {
+  opacity: 1;
+}
+
+#registro form .login a {
+  text-decoration: none;
+  color: #009688;
+}
+
+#registro form .login p, #registro form .login a {
+  font-size: large;
+}
+
+#acesso div h2 {
+  color: #009688;
+  text-align: center;
+}
+
+#acesso div #botao {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#acesso div #botao button {
+  display: block;
+  background-color: #009688;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  text-align: center;
+}
+
+#acesso div #botao button a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #009688;
+  color: white;
+}
+
+#acesso div #botao button:hover {
+  opacity: 1;
+}
+
+#linhas {
+  margin: 0px 10px;
+}
+
+#linhas h2 {
+  color: #009688;
+  text-align: center;
+}
+
+#linhas hr {
+  border: 1px solid #009688;
+  background-color: #009688;
+}
+
+#linhas div p {
+  padding-left: 30px;
+}
+
+#linhas div span {
+  float: right;
+  padding-right: 80px;
+}
+
+#links {
+  margin: 0px 10px;
+}
+
+#links h2 {
+  color: #009688;
+  text-align: center;
+}
+
+#links hr {
+  border: 1px solid #009688;
+  background-color: #009688;
+}
+
+#links div p {
+  padding-left: 30px;
+}
+
+#links div a {
+  float: right;
+  padding-right: 60px;
+  text-decoration: none;
+  color: black;
+}
+
+#links div a:hover {
+  color: #009688;
+}
+
+#saude {
+  margin: 0px 10px;
+}
+
+#saude hr {
+  border: 1px solid #009688;
+  background-color: #009688;
+}
+
+#saude h2 {
+  text-align: center;
+  color: #009688;
+}
+
+#saude h3 {
+  text-align: center;
+  color: #009688;
+}
+
+#saude #clinicas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 10px;
+}
+
+#saude #clinicas #clinica1, #saude #clinicas #clinica2 {
+  padding: 0 200px;
+}
+
+#saude #clinicas #clinica1 h4, #saude #clinicas #clinica2 h4 {
+  text-align: center;
+  color: #009688;
+}
+
+#saude #clinicas #clinica1 p, #saude #clinicas #clinica2 p {
+  text-align: center;
+}
+
+#saude #clinicas #clinica1 div#iframe, #saude #clinicas #clinica2 div#iframe {
+  height: auto;
+  padding: auto;
+  margin: auto;
+}
+
+#saude #clinicas #clinica1 div#iframe iframe, #saude #clinicas #clinica2 div#iframe iframe {
+  height: 100%;
+}
+
+#saude #farmacias {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 10px;
+}
+
+#saude #farmacias #farmacia1, #saude #farmacias #farmacia2 {
+  padding: 0 200px;
+}
+
+#saude #farmacias #farmacia1 h4, #saude #farmacias #farmacia2 h4 {
+  text-align: center;
+  color: #009688;
+}
+
+#saude #farmacias #farmacia1 p, #saude #farmacias #farmacia2 p {
+  text-align: center;
+}
+
+#saude #farmacias #farmacia1 div#iframe, #saude #farmacias #farmacia2 div#iframe {
+  height: auto;
+  padding: auto;
+  margin: auto;
+}
+
+#saude #farmacias #farmacia1 div#iframe iframe, #saude #farmacias #farmacia2 div#iframe iframe {
+  height: 100%;
+}
+
+#perguntas_frequentes {
+  margin: 0;
+}
+
+#perguntas_frequentes h2 {
+  color: #009688;
+  text-align: center;
+}
+
+#perguntas_frequentes .accordion {
+  background-color: #00b09f;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 18px;
+  margin: 0;
+}
+
+#perguntas_frequentes .active, #perguntas_frequentes .accordion:hover {
+  background-color: #00a596;
+}
+
+#perguntas_frequentes .panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+#perguntas_frequentes .panel p {
+  line-height: 1.5;
+}
+
+#perguntas_frequentes .panel ul li {
+  list-style-type: disc;
+  padding: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    background-color: #009688;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    color: white;
+    background-color: #009688;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  nav ul li a {
+    -webkit-text-decoration: #009688;
+            text-decoration: #009688;
+    color: white;
+    width: 100%;
+  }
+  nav ul li ul {
+    background-color: #009688;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 10px;
+    right: 0;
+    display: none;
+    width: 100%;
+  }
+  nav ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+  nav ul li.login {
+    width: 100%;
+    float: left;
+  }
+  #nav.sticky {
+    position: relative;
+  }
+  #o_que_fazemos #acao .acao {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #o_que_fazemos #acao .acao img {
+    max-width: 100%;
+    height: auto;
+  }
+  #o_que_fazemos div.column .row .imgx {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+  }
+  #o_que_fazemos div.column .row .img7 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+  }
+  #recursos .lar, #recursos .educacao {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #recursos .lar img, #recursos .educacao img {
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer ul {
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+  }
+  footer ul li a {
+    width: 100%;
+  }
+  #quem_somos form fieldset input[type=text] {
+    width: 95%;
+  }
+  #quem_somos form fieldset textarea {
+    width: 95%;
+  }
+  #o_que_fazemos form fieldset input[type=text], #o_que_fazemos form fieldset input[type=password], #o_que_fazemos form fieldset input[type=email] {
+    width: 95%;
+  }
+  #o_que_fazemos form fieldset textarea {
+    width: 95%;
+  }
+  #indicadores_ {
+    margin: 0px 10px;
+  }
+  #indicadores_ #indicadores {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 10px;
+    margin: auto auto auto auto;
+  }
+  #indicadores_ #indicadores #indicador {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+  }
+  #indicadores_ #indicadores #indicador #indicador_1, #indicadores_ #indicadores #indicador #indicador_2, #indicadores_ #indicadores #indicador #indicador_3, #indicadores_ #indicadores #indicador #indicador_4, #indicadores_ #indicadores #indicador #indicador_5, #indicadores_ #indicadores #indicador #indicador_6 {
+    margin: auto;
+    padding: auto;
+  }
+  #recursos {
+    margin: 0px 10px;
+  }
+  #recursos .clearfix {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #linhas {
+    margin: 0px 10px;
+  }
+  #linhas div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #linhas div p {
+    padding-left: 30px;
+  }
+  #linhas div span {
+    float: right;
+    padding-right: 80px;
+  }
+  #saude {
+    margin: 0px 10px;
+  }
+  #saude #clinicas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin: 10px;
+  }
+  #saude #clinicas #clinica1, #saude #clinicas #clinica2 {
+    padding: 0 40px;
+  }
+  #saude #clinicas #clinica1 h4, #saude #clinicas #clinica2 h4 {
+    text-align: center;
+    color: #009688;
+  }
+  #saude #clinicas #clinica1 p, #saude #clinicas #clinica2 p {
+    text-align: center;
+  }
+  #saude #clinicas #clinica1 iframe, #saude #clinicas #clinica2 iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  #saude #farmacias {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    margin: 10px;
+  }
+  #saude #farmacias #farmacia1, #saude #farmacias #farmacia2 {
+    padding: 0 40px;
+  }
+  #saude #farmacias #farmacia1 h4, #saude #farmacias #farmacia2 h4 {
+    text-align: center;
+    color: #009688;
+  }
+  #saude #farmacias #farmacia1 p, #saude #farmacias #farmacia2 p {
+    text-align: center;
+  }
+  #saude #farmacias #farmacia1 iframe, #saude #farmacias #farmacia2 iframe {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=usf_css1.css.map */

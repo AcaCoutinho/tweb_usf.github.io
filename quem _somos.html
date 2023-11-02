@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unidade de Saude Familiar - Aquilino Ribeiro">
+    <meta name="keywords" content="USF">
+    <title>Unidade de Saude Familiar</title>
+    <link rel="stylesheet" href="usf_css1.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Unidade de Saúde Familiar</h1>
+        <h1>Aquilino Ribeiro</h1>
+    </header> 
+
+    <nav id="nav">
+        <ul>
+            <li><a href="Unidade_da_Saude_Familiar.html">Início</a></li>
+            <li class="ativo"><a href="quem _somos.html">Quem Somos</a></li>
+            <li><a href="o_que_fazemos.html">O que Fazemos</a></li>
+            <li><a href="indicadores.html">Indicadores</a></li>
+            <li><a href="recursos.html">Recursos</a></li>
+            <li class="login"><a class="login" href="login.html">Login</a>
+                <ul class="dropdown">
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="registro.html">Registro</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <br/>
+    <main id="quem_somos">
+        <h2>Quem Somos</h2>
+        <div id="bloco1">
+            <h3>Missão</h3>
+            <p>A USF Aquilino Ribeiro tem como missão a prestação de cuidados de saúde personalizados à população inscrita, garantindo acessibilidade, globalidade, qualidade e continuidade nos cuidados prestados, num contexto de proximidade, com espírito de equipa e num clima de solidariedade intra e interinstitucional.</p>
+            <h3>Visão</h3>
+            <p>Ser uma USF de excelência, capaz de otimizar os recursos disponíveis, garantindo em toda a área de influência a prestação de serviços com os melhores padrões de qualidade técnico-profissional, de acordo com as boas práticas clínicas, rigor, segurança e confidencialidade, procurando assim proporcionar à população mais e melhor saúde, confiança e satisfação.</p>
+            <h3 class="nao">Valores</h3>
+            <ul>
+                <li>Conciliação</li>
+                <li>Cooperação</li>
+                <li>Solidariedade</li>
+                <li>Autonomia</li>
+                <li>Articulação</li>
+                <li>Avaliação e transparência</li>
+                <li>Gestão participativa</li>
+            </ul>
+            <h3 class="nao">Coordenador</h3>
+            <p>Rita Regadas Fernandes</p>
+            <h3 class="nao">Conselho Técnico</h3>
+            <ul>
+                <li><p><span>Médica</span> - Maria Dalila Fernandes Mendes Garcia Lima</p></p></li>
+                <li><p><span>Enfermeira</span> - Cristina Isabel Carvalho Santos Lemos</p></li>
+                <li><p><span>Secretária Clínica</span> - Ana Maria Rodrigues Lemos</p></li>
+                <li><p><span>ARS</span> - ARS Norte</p></li>
+            </ul>
+        </div>
+        <br/>
+        <form>
+            <fieldset>
+                <label>Assunto:</label><select>
+                    <option>Reclamações</option>
+                    <option>Duvidas</option>
+                    <option>Sugestoes</option>
+                </select>
+                <hr>
+                <label>Primeiro Nome:</label>
+                <input type="text" required placeholder="Primeiro Nome" maxlength="20" name="primeiro">
+                <label>Ultimo nome:</label>
+                <input type="text" required placeholder="Ultimo Nome" name="ultimo">
+                <label>Comentário:</label>
+                <textarea rows="5" cols="40" maxlength="1000" placeholder="Comentário..." name="comentario"></textarea>
+                <input type="submit" value="Enviar">
+            </fieldset>
+        </form>
+        <br/>   
+    </main>    
+    <div class="bloco2">
+        <h2 class="bloco2">Informações</h2>
+    <br/>
+        <div id="bloco2">
+            <div id="morada">
+                <p>Morada da Sede:</p>
+                <p>Av. da República, 3620-371 </p>
+            </div>
+            <div id="horario">
+                <p>Horario:</p>
+                <p>De 2ª a 6ª feira: 08:00 às 20:00</p>
+                <p>Fins de Semana e Feriados: Encerrado</p>
+            </div>
+            <div id="telefone">
+                <p>Telefone:</p>
+                <p>254520251</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><a href="linhas.html">Linhas de Apoio</a></li>
+            <li><a href="links.html">Links Úteis</a></li>
+            <li><a href="saude.html">Outras Unidades de Saúde</a></li>
+            <li><a href="perguntas.html">Perguntas Frequentes</a></li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" src="javascript/sticky.js"></script>
+</body>
+</html>
